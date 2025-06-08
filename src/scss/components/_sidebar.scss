@@ -1,0 +1,17 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100%;
+  background-color: $white;
+  box-shadow: 16px 0 52px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: left 0.3s ease;
+
+  &.open {
+    left: 0;
+  }
+
+  // ... остальные стили для сайдбара
+}

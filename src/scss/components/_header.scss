@@ -1,0 +1,187 @@
+header {
+  background-color: #f9f9f9;
+  padding: 5px, 15px, 5px, 15px;
+  margin: 0;
+}
+.title {
+  display: flex;
+  justify-content: start;
+  width: 304px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.title__img {
+  width: 4px;
+  height: 40px;
+  background-image: url(../img/highlight.svg);
+  margin-right: 5px;
+}
+
+.title__text {
+  font-family: 'TT Lakes', sans-serif;
+  height: 40px;
+  width: 288px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+.icon {
+  border-radius: 50%;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  background: #f8f8f8;
+}
+@media (min-width: 1px) and (max-width: 350px) {
+  .header-width__768 {
+    display: none;
+  }
+
+  .header-width__1120 {
+    display: none;
+  }
+
+  .header-width__320 {
+    width: 320px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .icon--burger {
+    background-image: url(../img/burger.svg);
+    margin-right: 10px;
+  }
+
+  .divider {
+    border-left: 1px solid #eaeaea;
+    height: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .icon--repair {
+    background-image: url(../img/repair.svg);
+  }
+
+  .icon--checkstatus {
+    background-image: url(../img/checkstatus.svg);
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 770px) {
+  .header-width__320 {
+    display: none;
+  }
+
+  .header-width__1120 {
+    display: none;
+  }
+
+  .header-width__768 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    width: 768px;
+    padding: 10px;
+  }
+
+  .right-icon {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .icon--burger {
+    background-image: url(../img/burger.svg);
+    margin-left: 5px;
+  }
+
+  .divider {
+    border-left: 1px solid #eaeaea;
+    height: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .divider-2 {
+    border-left: 1px solid #eaeaea;
+    height: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .icon--call {
+    background-image: url(../img/call.svg);
+    margin-right: 10px;
+  }
+
+  .icon--chat {
+    background-image: url(../img/chat.svg);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .icon--profile {
+    background-image: url(../img/profile.svg);
+    margin-left: 10px;
+  }
+
+  .icon--repair {
+    background-image: url(../img/repair.svg);
+    margin-right: 10px;
+  }
+
+  .icon--checkstatus {
+    background-image: url(../img/checkstatus.svg);
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 770px) {
+  .invisible {
+    display: none;
+  }
+
+  .header-width__320 {
+    display: none;
+  }
+
+  .header-width__768 {
+    display: none;
+  }
+
+  .desctop {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+  }
+
+  .header-width__1120 {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .right-icon {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .icon--repair {
+    background-image: url(../img/repair.svg);
+    margin-right: 15px;
+  }
+
+  .icon--checkstatus {
+    background-image: url(../img/checkstatus.svg);
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+@mixin for-mobile {
+  @media (max-width: #{$tablet - 1}) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1}) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
