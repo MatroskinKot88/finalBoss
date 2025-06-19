@@ -1,5 +1,5 @@
 import '../scss/style.scss'
-import '../js/swiper-bundle'
+import '../js/swiper-bundle.js'
 
 document.addEventListener('DOMContentLoaded', function () {
   if (window.innerWidth <= 768) {
@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
-        dynamicBullet: true
+        dynamicBullet: true,
+        spaceBetween: 30
       }
     })
   }
