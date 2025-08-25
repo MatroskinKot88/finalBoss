@@ -1,0 +1,20 @@
+.brands__circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 62, 121, 1);
+  position: relative;
+  margin-right: 20px;
+}
+
+.brands__circle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid rgba(255, 62, 121, 1);
+  border-top: 2px solid rgba(255, 62, 121, 1);
+  transform: translate(-50%, -50%) rotate(45deg);
+}

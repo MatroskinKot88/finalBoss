@@ -1,0 +1,78 @@
+// Блок услуг
+.services {
+  padding: 24px 16px;
+
+  .services__nav {
+    overflow-x: scroll;
+    color: #f8f8f8;
+    margin-top: 30px;
+  }
+
+  .services__nav-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: 'TT Lakes';
+    border: 0;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    min-width: fit-content;
+    padding: 5px;
+    color: rgba(126, 126, 130, 1);
+    list-style: none;
+    cursor: pointer;
+    margin-right: 3px;
+  }
+
+  .services__nav-item:hover {
+    border: 2px solid #b8ffec;
+    background: #ffffff;
+  }
+
+  &__content {
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 48px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    p {
+      margin: 0 0 16px 0;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 490px;
+    }
+  }
+
+  &__read-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  &__image {
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 -16px;
+    }
+  }
+}

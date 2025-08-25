@@ -1,0 +1,66 @@
+.repair-types {
+  .section-header {
+    font-family: 'TT Lakes';
+    color: #7e7e82;
+    background: linear-gradient(to right, #f8f8f8, #ffffff);
+    width: auto;
+    height: 56px;
+    margin: auto;
+  }
+
+  .seaction-title {
+    padding: 24px 16px 16px auto;
+  }
+
+  .rem-container__list {
+    display: flex;
+  }
+
+  .rem-container__list li {
+    list-style: none;
+  }
+
+  .rem-container__card a {
+    text-decoration: none;
+    color: rgba(27, 28, 33, 1);
+  }
+
+  .rem-container__card {
+    font-family: 'TT Lakes';
+    color: rgba(27, 28, 33, 1);
+    width: 240px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 16px;
+    display: flex;
+  }
+
+  .brand__circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media (max-width: 768px) {
+    .rem-container__list,
+    .show-more {
+      display: none;
+    }
+
+    .swiper {
+      display: block;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .rem-container__list,
+    .show-more {
+      display: block;
+    }
+
+    .swiper {
+      display: none;
+    }
+  }
+}

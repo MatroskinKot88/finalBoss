@@ -1,0 +1,31 @@
+// Футер
+.footer {
+  background-color: white;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: $grey-text;
+
+  &__container {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    color: $grey-text;
+    text-decoration: none;
+    display: block;
+    margin: 16px 0;
+
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+}
