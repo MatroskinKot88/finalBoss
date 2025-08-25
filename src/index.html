@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Финальный Босс</title>
-    <!-- <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css"> -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css"> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <!--Хедер-->
+        <!--Хедер -->
     <header class="header">
         <div class="header-width">
             <!--На мобилку-->
@@ -422,6 +422,59 @@
             </ul>
         </div>
     </aside>
+
+<!-- Модальные окна -->
+    <!-- Модалка обратной связи -->
+    <div class="modal" id="feedback-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">
+                <svg width="20" height="20">
+                    <use xlink:href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="modal__title">Обратная связь</h2>
+            <form class="modal__form" id="feedback-form">
+                <div class="modal__form-group">
+                    <input type="text" class="modal__input" name="name" placeholder="Имя" required>
+                    <span class="modal__error"></span>
+                </div>
+                <div class="modal__form-group">
+                    <input type="text" class="modal__input" name="name" placeholder="Телефон" required>
+                    <span class="modal__error"></span>
+                </div>
+                <div class="modal__form-group">
+                    <input type="email" class="modal__input" name="email" placeholder="Электронная почта" required>
+                    <span class="modal__error"></span>
+                </div>
+                <div class="modal__form-group">
+                    <textarea class="modal__textarea" name="message" placeholder="Сообщение" rows="4" required></textarea>
+                    <span class="modal__error"></span>
+                </div>
+                <button type="submit" class="modal__submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модалка заказа звонка -->
+    <div class="modal" id="callback-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">
+                <svg width="20" height="20">
+                    <use xlink:href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="modal__title">Заказать звонок</h2>
+            <form class="modal__form" id="callback-form">
+                <div class="modal__form-group">
+                    <input type="tel" class="modal__input" name="phone" placeholder="Ваш телефон" required>
+                    <span class="modal__error"></span>
+                </div>
+                <button type="submit" class="modal__submit">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
 
     <script src="js/swiper-bundle.js"></script>
     <script src="js/index.js"></script>

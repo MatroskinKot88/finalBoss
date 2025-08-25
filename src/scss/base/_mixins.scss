@@ -15,3 +15,34 @@
     @content;
   }
 }
+
+// @mixin respond-to($breakpoint) {
+//     @if $breakpoint == mobile {
+//         @media (max-width: #{$mobile}) {
+//             @content;
+//         }
+//     }
+//     @if $breakpoint == tablet {
+//         @media (min-width: #{$mobile + 1px}) and (max-width: #{$tablet}) {
+//             @content;
+//         }
+//     }
+//     @if $breakpoint == desktop {
+//         @media (min-width: #{$tablet + 1px}) {
+//             @content;
+//         }
+//     }
+// }
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

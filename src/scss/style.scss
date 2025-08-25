@@ -23,3 +23,15 @@
 
 // Vendors
 @import 'vendors/swiper';
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+}
+
+.page {
+    min-height: 100vh;
+    padding-top: 80px; // Для фиксированного header
+}
